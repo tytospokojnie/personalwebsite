@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+    font-family: 'Libre Baskerville', serif;
+  background-color: #fff;
+  color: #111;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.name {
+  font-family: 'Crimson Text', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1.2rem;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 3px;
+}
+
+.menu a:hover {
+  color: #555;
+  border-bottom: 1px solid #555;
+}
+
+
+body, footer, .lang-switch {
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* Stopka */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: inherit;
+  box-sizing: border-box;
+  font-size: 0.8em
+}
+
+.lang-switch {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s, text-shadow 0.2s;
+  font-weight: bold;
+  color: inherit;
+}
+
+.lang.active {
+  color: inherit;
+}
+
+.lang.inactive {
+  color: #888;
+}
+
+.lang.inactive:hover {
+  color: inherit;
+  text-shadow: 0 0 3px currentColor;
+}
+
+footer .copyright {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8em; /* mniejsza czcionka */
+  font-weight: 300;  /* cieńsza niż normal */
+}
+
+.testimonials {
+  margin: 3rem 0;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.testimonial {
+  background: rgba(0,0,0,0.03); /* lekko szare tło */
+  border-left: 4px solid #333;   /* dekoracyjna kreska */
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  border-radius: 6px;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+.testimonial strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.profile-photo {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.profile-photo img {
+  width: 100%;         /* większe niż 60%, dopasuj według potrzeb */
+  max-width: 500px;   /* nie wyjdzie za duże */
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0.5rem auto 0.5rem auto;
+}
+
+.profile-photo img:hover {
+  transform: scale(1.03); /* delikatne powiększenie przy hover */
+}
